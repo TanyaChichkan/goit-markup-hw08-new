@@ -197,16 +197,16 @@ input[type="radio"].visually-hidden {
   fill: #2196f3;
 }
 
-.burger-menu-open:hover {
-  fill: #2196f3;
-}
-
 .burger-menu.is-open .burger-menu-close {
   display: block;
 }
 
 .burger-menu.is-open .burger-menu-open {
   display: none;
+}
+
+.burger-menu:hover .burger-menu-open {
+  fill: #2196f3;
 }
 
 .main-nav {
@@ -1107,6 +1107,10 @@ footer .form-label {
 
 .button-modal:hover {
   border-color: #2196f3;
+}
+
+.button-modal:hover .close-icon {
+  fill: #2196f3;
 }
 
 .form-title {

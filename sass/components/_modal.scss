@@ -57,6 +57,10 @@
 
   &:hover {
     border-color: $hover-color;
+
+    .close-icon {
+      fill: $hover-color;
+    }
   }
 }
 

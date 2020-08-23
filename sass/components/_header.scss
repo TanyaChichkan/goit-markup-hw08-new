@@ -67,12 +67,6 @@
       fill: $hover-color;
     }
   }
-
-  &-open {
-    &:hover {
-      fill: $hover-color;
-    }
-  }
 }
 
 .burger-menu.is-open .burger-menu-close {
@@ -81,6 +75,12 @@
 
 .burger-menu.is-open .burger-menu-open {
   display: none;
+}
+
+.burger-menu:hover {
+  .burger-menu-open {
+    fill: $hover-color;
+  }
 }
 
 .main-nav {
