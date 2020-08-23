@@ -151,33 +151,57 @@
           <h2 class="head-title">Чем мы занимаемся</h2>
           <ul class="main-content-list none-list">
             <li class="main-content-list-item">
-              <img
-                src="./img-copy/laptop.jpg"
-                alt="Ноутбук"
-                class="main-content-pic"
-                height="294"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img-adaptive/desktop/featuresdeskcomp/display.jpg    1x,
+                    ./img-adaptive/desktop/featuresdeskcomp/display@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img-copy/laptop.jpg"
+                  alt="Ноутбук"
+                  class="main-content-pic"
+                />
+              </picture>
+
               <h3 class="main-content-title">Десктопные приложения</h3>
             </li>
             <li class="main-content-list-item">
-              <img
-                src="./img-copy/phone.jpg"
-                alt="Телефон"
-                class="main-content-pic"
-                height="294"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img-adaptive/desktop/featuresdeskcomp/laptop.jpg    1x,
+                    ./img-adaptive/desktop/featuresdeskcomp/laptop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img-copy/phone.jpg"
+                  alt="Телефон"
+                  class="main-content-pic"
+                />
+              </picture>
+
               <h3 class="main-content-title">Мобильные приложения</h3>
             </li>
             <li class="main-content-list-item">
-              <img
-                src="./img-copy/dispaly.jpg"
-                alt="Монитор"
-                class="main-content-pic"
-                height="294"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img-adaptive/desktop/featuresdeskcomp/phone.jpg    1x,
+                    ./img-adaptive/desktop/featuresdeskcomp/phone@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img-copy/dispaly.jpg"
+                  alt="Монитор"
+                  class="main-content-pic"
+                />
+              </picture>
+
               <h3 class="main-content-title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -540,7 +564,7 @@
       </section>
 
       <!-- Customers section -->
-      <section class="team">
+      <section class="section">
         <div class="container">
           <h2 class="head-title">Постоянные клиенты</h2>
           <ul class="customers-list none-list">

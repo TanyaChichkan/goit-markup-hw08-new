@@ -1,12 +1,9 @@
 .main-content {
+  @extend .section;
+
   @media screen and(max-width:1199px) {
     display: none;
   }
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .main-content-list {

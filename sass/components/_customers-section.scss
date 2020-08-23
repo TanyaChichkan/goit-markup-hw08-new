@@ -1,3 +1,8 @@
+.customers {
+  @extend .team;
+  background-color: $accent-color;
+}
+
 .customers-list {
   display: flex;
   align-items: center;

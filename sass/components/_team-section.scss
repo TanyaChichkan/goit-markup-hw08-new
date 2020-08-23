@@ -1,12 +1,6 @@
 .team {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @extend .section;
   background-color: #f5f4fa;
-
-  @include desktop() {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .team-list {

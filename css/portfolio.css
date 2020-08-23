@@ -76,6 +76,19 @@ input[type="radio"].visually-hidden {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .btn, .button-sign-up {
   min-width: 200px;
   height: 50px;
@@ -206,7 +219,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-  z-index: 100;
   border-top: 1px solid #ececec;
   position: absolute;
   top: 100%;
@@ -674,14 +686,14 @@ footer {
   color: #ffffff;
 }
 
-.form-field {
+footer .form-field {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .form-field {
+  footer .form-field {
     display: flex;
     flex-direction: column;
   }
@@ -691,7 +703,7 @@ footer {
   margin: 0 auto;
 }
 
-.form-label {
+footer .form-label {
   display: block;
   font-weight: bold;
   letter-spacing: 0.03em;
@@ -743,6 +755,18 @@ footer {
 .form-footer .form-label {
   display: block;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer .form-label {
+    margin: 0;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .form-footer .footer-input {
@@ -830,14 +854,6 @@ footer {
     display: flex;
     align-items: center;
     margin: 0;
-  }
-  .form-label {
-    align-self: flex-start;
-    margin: 0;
-    font-weight: bold;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   .footer-input {
     width: 358px;
