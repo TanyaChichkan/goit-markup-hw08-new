@@ -1,0 +1,56 @@
+.customers-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @include desktop() {
+    flex-wrap: nowrap;
+  }
+
+  &-item {
+    width: 210px;
+    margin: 15px;
+
+    @include tablet {
+      width: 226px;
+    }
+
+    @include desktop() {
+      width: calc((100% - 150px) / 6);
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    background-color: $accent-color;
+
+    transition: border-color 250ms $cubic-timing;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    border-color: $hover-color;
+  }
+}
+
+.company-logo {
+  fill: currentColor;
+  transition: fill 250ms $cubic-timing;
+}
+
+.customers-list-link {
+  &:hover,
+  &:focus {
+    .company-logo {
+      fill: $hover-color;
+    }
+  }
+}

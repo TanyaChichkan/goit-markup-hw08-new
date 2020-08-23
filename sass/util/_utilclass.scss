@@ -1,0 +1,95 @@
+@mixin phone {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  background-color: $accent-color;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.none-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+
+  @include desktop() {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

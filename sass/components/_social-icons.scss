@@ -1,0 +1,40 @@
+.team-social-link-item {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  color: #afb1b8;
+  background-color: $accent-color;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  transition: background-color 250ms $cubic-timing;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+.socials-icons {
+  fill: currentColor;
+  transition: fill 250ms $cubic-timing;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.footer-social-link-item {
+  color: $accent-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms $cubic-timing;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}

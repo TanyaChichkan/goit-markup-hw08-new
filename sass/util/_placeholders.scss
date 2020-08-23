@@ -1,0 +1,29 @@
+%section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.btn {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  display: inline-block;
+
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+  background-color: $hover-color;
+}
+
+%container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin: 0 auto;
+}

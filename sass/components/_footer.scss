@@ -1,0 +1,308 @@
+.footer-contacts {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include desktop() {
+    text-align: left;
+  }
+}
+
+@include tablet() {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.bottom {
+  @extend .site-logo;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: $accent-color;
+
+  @include tablet() {
+    margin: 0 auto;
+  }
+}
+
+.adress-street {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $accent-color;
+}
+
+.address-link {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail {
+  margin-bottom: 9px;
+}
+
+.footer-socials {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 206px;
+}
+
+.footer-socials-list a {
+  text-decoration: none;
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-frame {
+  margin: 0 auto;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $accent-color;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer-input {
+  width: 450px;
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: $accent-color;
+  outline: none;
+
+  background-color: #2f303a;
+}
+
+.form-frame input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+
+.button {
+  &-sign-up {
+    @extend .btn;
+
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 0 auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 26px;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 25%;
+    right: 13px;
+    fill: $accent-color;
+  }
+}
+
+.form-footer .form-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-footer .footer-input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+@include desktop() {
+  .footer-contacts {
+    margin: 0;
+    width: 235px;
+  }
+
+  .main-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer {
+    background-color: #2f303a;
+  }
+
+  .site-logo {
+    display: block;
+    margin-right: 85px;
+
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $primary-text-color;
+  }
+
+  .bottom {
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    color: $accent-color;
+  }
+
+  .adress-street {
+    margin-bottom: 9px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $accent-color;
+  }
+
+  .address-link {
+    display: flex;
+
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .mail {
+    margin-bottom: 9px;
+  }
+
+  .footer-socials {
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 94px;
+  }
+
+  .footer-socials-list a {
+    text-decoration: none;
+  }
+
+  .footer-socials-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    align-self: flex-start;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form-frame {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .form-label {
+    align-self: flex-start;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .footer-input {
+    width: 358px;
+    height: 46px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: $accent-color;
+    outline: none;
+
+    background-color: #2f303a;
+  }
+
+  .form-frame input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .button {
+    &-sign-up {
+      margin-left: 12px;
+      display: inline-flex;
+      align-items: center;
+      border: none;
+    }
+
+    &-icon {
+      fill: $accent-color;
+      margin-left: 10px;
+    }
+  }
+  .form-footer .footer-input {
+    margin-bottom: 0;
+  }
+}
