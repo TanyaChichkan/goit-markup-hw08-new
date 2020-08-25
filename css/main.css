@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -374,15 +375,15 @@ input[type="radio"].visually-hidden {
   .menu-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0;
     position: static;
   }
   .site-navigation-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0;
-    margin-left: 85px;
+  }
+  .menu-wrapper .site-navigation-contacts {
+    text-align: left;
   }
   .page-nav {
     display: flex;
@@ -403,7 +404,7 @@ input[type="radio"].visually-hidden {
 @media screen and (min-width: 1200px) {
   .site-navigation-contacts {
     align-items: center;
-    flex-direction: row;
+    display: flex;
     margin-left: auto;
   }
 }
@@ -973,14 +974,21 @@ footer .form-label {
 }
 
 .footer-input {
-  width: 450px;
-  height: 50px;
   padding-left: 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   outline: none;
   background-color: #2f303a;
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-input {
+    width: 450px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1002,13 +1010,19 @@ footer .form-label {
   position: relative;
   text-align: center;
   align-items: center;
-  width: 200px;
+  width: 25%;
   height: 50px;
   border: none;
   margin: 0 auto;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 26px;
+}
+
+@media screen and (min-width: 480px) {
+  .button-sign-up {
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1088,16 +1102,22 @@ footer .form-label {
 }
 
 .modal {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(0);
-  height: 609px;
-  width: 450px;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1147,17 +1167,22 @@ footer .form-label {
 }
 
 .form-input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .form-input {
+    width: 370px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .form-input {
     width: 448px;
-    height: 40px;
   }
 }
 

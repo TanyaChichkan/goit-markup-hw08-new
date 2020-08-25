@@ -73,7 +73,7 @@
 }
 
 .example-list-item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   background: $accent-color;
   position: relative;
@@ -85,6 +85,10 @@
   &:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  @include phone() {
+    width: 450px;
   }
 
   @include tablet() {
