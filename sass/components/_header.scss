@@ -276,11 +276,7 @@
   }
 
   .site-navigation-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0;
-    margin-left: 85px;
   }
 
   .page-nav {
@@ -304,7 +300,7 @@
 @include desktop() {
   .site-navigation-contacts {
     align-items: center;
-    flex-direction: row;
+    display: flex;
     margin-left: auto;
   }
 }
