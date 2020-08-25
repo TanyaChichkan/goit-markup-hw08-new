@@ -408,6 +408,10 @@ input[type="radio"].visually-hidden {
   }
 }
 
+header {
+  border: 1px solid #ececec;
+}
+
 .portfolio {
   background-color: #ffffff;
 }
