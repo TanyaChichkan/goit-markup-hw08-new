@@ -749,8 +749,19 @@ input[type="radio"].visually-hidden {
 }
 
 .customers-list-item {
-  width: 210px;
   margin: 15px;
+}
+
+@media screen and (max-width: 479px) {
+  .customers-list-item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list-item {
+    width: 210px;
+  }
 }
 
 @media screen and (min-width: 768px) {

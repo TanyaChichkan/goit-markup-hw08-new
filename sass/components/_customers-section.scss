@@ -14,8 +14,14 @@
   }
 
   &-item {
-    width: 210px;
     margin: 15px;
+    @media screen and(max-width:479px) {
+      width: calc((100% - 60px) / 2);
+    }
+
+    @include phone() {
+      width: 210px;
+    }
 
     @include tablet {
       width: 226px;
