@@ -21,8 +21,7 @@
   fill: currentColor;
   transition: fill 250ms $cubic-timing;
 
-  &:hover,
-  &:focus {
+  .team-social-link-item:hover & {
     fill: $accent-color;
   }
 }
